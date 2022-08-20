@@ -22,3 +22,8 @@ user.scream(); // O(1)
 
 // O(n/k)
 
+
+// in JavaScript ...
+const a = new Map() // stores data in a particular order that can be called upon and will keep that order
+const b = new Set() // stores only the key, not the value
+
