@@ -43,3 +43,4 @@ const myHashTable = new HashTable(50); // size of the hash from 0 to 50
 myHashTable.set('grapes', 10000);
 myHashTable.set('apples', 54);
 myHashTable.get('grapes');
+
