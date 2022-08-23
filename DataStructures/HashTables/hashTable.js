@@ -36,11 +36,24 @@ class HashTable {
         } // O(1)
         return undefined;
     }
+
+    keys() {
+        const keysArr = [];
+
+        for (let i = 0; i < this.data.length; i++) {
+            if (this.data[i]) {
+                keysArr.push(this.data[i][0])
+            }
+        }
+        return keysArr;
+    }
 }
 
 const myHashTable = new HashTable(50); // size of the hash from 0 to 50
 // console.log(myHashTable._hash('grapes'));
 myHashTable.set('grapes', 10000);
 myHashTable.set('apples', 54);
-myHashTable.get('grapes');
+myHashTable.set('oranges', 2);
+// myHashTable.get('grapes');
+console.log(myHashTable.keys()); // prints out [ 'grapes', 'apples', 'oranges' ]
 
