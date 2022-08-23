@@ -1,5 +1,5 @@
 # DataStructures
-<div align="center>
+
     Arrays <br>
     Trees <br>
     Stacks <br>
@@ -31,4 +31,4 @@
         <li>delete O(1)</li>
     </ul>
 
-</div>
+
