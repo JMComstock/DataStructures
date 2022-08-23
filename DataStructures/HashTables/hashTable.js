@@ -38,11 +38,23 @@ class HashTable {
     }
 
     keys() {
-        const keysArr = [];
+        if (!this.data.length) {
+            return undefined;
+        }
 
+        const keysArr = [];
+        // loop through all elements
         for (let i = 0; i < this.data.length; i++) {
-            if (this.data[i]) {
-                keysArr.push(this.data[i][0])
+            // if it's not an empty memory cell
+            if (this.data[i] && this.data[i].length) {
+                // but also loop through all the potential collisions
+                if (this.data.length > 1) {
+                    for (let j = 0; j < this.data[i].length; j++) {
+                        keysArr.push(this.data[i][j][0]);
+                    }
+                } else {
+                    keysArr.push(this.data[i][0])
+                }
             }
         }
         return keysArr;
