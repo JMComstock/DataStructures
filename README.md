@@ -27,6 +27,7 @@
 </div>
 <div>
     <h3>Hash Tables</h3>
+    <p>Hash Tables have Fast lookups (Good collision resolution needed - Linked List), Fast inserts, Flexible Keys, Unordered, Slow key iteration</p>
     <ul>
         <li>search O(1)</li>
         <li>lookup O(1)</li>
