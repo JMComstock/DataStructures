@@ -35,4 +35,14 @@
         <li>delete O(1)</li>
     </ul>
 </div>
+<div>
+    <h3>Linked List</h3>
+    <ul>
+        <li>prepend O(1)</li>
+        <li>append O(1)</li>
+        <li>lookpup O(n)</li>
+        <li>insert O(n)</li>
+        <li>delete O(n)</li>
+    </ul>
+</div>
 
