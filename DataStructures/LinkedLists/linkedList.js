@@ -1,6 +1,6 @@
 // JavaScript doesn't have linked lists per say, so create one
 // Create a linked list going from ...
-// 1--> 10 --> 5 --> 16
+// 1--> 10 --> 99 --> 5 --> 16
 
 
 // let myLinkedList = {
@@ -15,6 +15,7 @@
 //         }
 //     } 
 // }
+
 class Node {
     constructor(value) {
         this.value = value,
@@ -49,10 +50,54 @@ class LinkedList {
         this.length++;
         return this;
     }
+    printList() {
+        const array = [];
+        let currentNode = this.head;
+        while (currentNode !== null) {
+            array.push(currentNode.value);
+            currentNode = currentNode.next;
+        }
+        return array;
+    }
+    insert(index, value) {
+        // check params
+        if (index >= this.length) {
+            return this.append(value);
+        }
+        if(index === 0) {
+            this.prepend(value);
+            return this.printList();
+        }
+        const newNode = {
+            value: value,
+            next: null
+        };
+        const leader = this.traverseToIndex(index-1);
+        const holdingPointer = leader.next;
+        leader.next = newNode;
+        newNode.next = holdingPointer;
+        this.length++;
+        return this;
+    }
+    traverseToIndex(index) {
+        // check for params
+        if (index >= this.length) {
+            return "Index out of bounds";
+        }
+        let counter = 0;
+        let currentNode = this.head;
+        while (counter !== index) {
+            currentNode = currentNode.next;
+            counter++;
+        }
+        return currentNode;
+    }
 }
 
 const myLinkedList = new LinkedList(10);
 myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
-console.log(myLinkedList);
+myLinkedList.insert(2, 99);
+myLinkedList.insert(4, 34);
+console.log(myLinkedList.printList());
