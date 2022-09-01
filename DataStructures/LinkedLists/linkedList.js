@@ -92,12 +92,20 @@ class LinkedList {
         }
         return currentNode;
     }
+    remove(index) {
+        const leader = this.traverseToIndex(index - 1);
+        const unwantedNode = leader.next;
+        leader.next = unwantedNode.next;
+        this.length--;
+        return this;
+    }
 }
 
-const myLinkedList = new LinkedList(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.prepend(1);
-myLinkedList.insert(2, 99);
-myLinkedList.insert(4, 34);
+const myLinkedList = new LinkedList(10); // [ 10 ]
+myLinkedList.append(5); // [ 10, 5 ]
+myLinkedList.append(16); // [ 10, 5, 16 ]
+myLinkedList.prepend(1); // [ 1, 10, 5, 16 ]
+myLinkedList.insert(2, 99); // [ 1, 10, 99, 5, 16]
+myLinkedList.insert(4, 34); // [ 1, 10, 99, 5, 34, 16]
+myLinkedList.remove(2); // [ 1, 10, 5, 34, 16 ]
 console.log(myLinkedList.printList());
