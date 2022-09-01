@@ -44,5 +44,14 @@
         <li>insert O(n)</li>
         <li>delete O(n)</li>
     </ul>
+    <h3>Doubly Linked List</h3>
+    <p>costs more memory but better to traverse</p>
+    <ul>
+        <li>prepend O(1)</li>
+        <li>append O(1)</li>
+        <li>lookpup O(n)</li>
+        <li>insert O(n)</li>
+        <li>delete O(n)</li>
+    </ul>
 </div>
 
