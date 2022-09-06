@@ -36,7 +36,8 @@
     </ul>
 </div>
 <div>
-    <h3>Linked List</h3>
+    <h3>Linked List </h3>
+    <p>better to use if you have less memory, fast insertion and deletion</p>  
     <ul>
         <li>prepend O(1)</li>
         <li>append O(1)</li>
@@ -45,7 +46,7 @@
         <li>delete O(n)</li>
     </ul>
     <h3>Doubly Linked List</h3>
-    <p>costs more memory but better to traverse</p>
+    <p>costs more memory but better to traverse forward and backward, more complex</p>
     <ul>
         <li>prepend O(1)</li>
         <li>append O(1)</li>
