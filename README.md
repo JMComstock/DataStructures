@@ -36,8 +36,8 @@
     </ul>
 </div>
 <div>
-    <h3>Linked List </h3>
-    <p>better to use if you have less memory, fast insertion and deletion</p>  
+    <h3>Linked List</h3>
+    <p>better to use if you have less memory, fast insertion and deletion, flexible size</p>  
     <ul>
         <li>prepend O(1)</li>
         <li>append O(1)</li>
@@ -46,13 +46,31 @@
         <li>delete O(n)</li>
     </ul>
     <h3>Doubly Linked List</h3>
-    <p>costs more memory but better to traverse forward and backward, more complex</p>
+    <p>costs more memory but better to traverse forward and backward, more complex, flexible size</p>
     <ul>
         <li>prepend O(1)</li>
         <li>append O(1)</li>
         <li>lookpup O(n)</li>
         <li>insert O(n)</li>
         <li>delete O(n)</li>
+    </ul>
+</div>
+<div>
+    <h3>Stacks</h3>
+    <p>Linear Data Structure, LIFO (last in first out), good when you need to know last value added</p>
+    <ul>
+        <li>lookup O(n)</li>
+        <li>pop O(1)</li>
+        <li>push O(1)</li>
+        <li>peek O(1)</li>
+    </ul>
+    <h3>Queues</h3>
+    <p>Linear Data Structure, FIFO (first in first out)</p>
+    <ul>
+        <li>lookup O(n)</li>
+        <li>enqueue O(1)</li>
+        <li>dequeue O(1)</li>
+        <li>peek O(1)</li>
     </ul>
 </div>
 
