@@ -58,6 +58,7 @@
 <div>
     <h3>Stacks</h3>
     <p>Linear Data Structure, LIFO (last in first out), good when you need to know last value added</p>
+    <p>Fast Operations, Fast peek, Ordered, Slow Lookup</p>
     <ul>
         <li>lookup O(n)</li>
         <li>pop O(1)</li>
@@ -66,6 +67,7 @@
     </ul>
     <h3>Queues</h3>
     <p>Linear Data Structure, FIFO (first in first out)</p>
+    <p>Fast Operations, Fast peek, Ordered, Slow Lookup</p>
     <ul>
         <li>lookup O(n)</li>
         <li>enqueue O(1)</li>
