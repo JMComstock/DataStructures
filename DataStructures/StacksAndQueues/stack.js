@@ -13,7 +13,7 @@ class Stack {
         this.length = 0;
     }
     peek() {
-        return this.pop;
+        return this;
     }
     push(value) {
         const newNode= new Node(value);
@@ -35,10 +35,10 @@ class Stack {
         if (this.top === this.bottom) {
             this.bottom = null;
         }
-        // const holdingPointer = this.top;
+        const holdingPointer = this.top;
         this.top = this.top.next;
         this.length--;
-        return this;
+        return holdingPointer;
     }
 
 }
