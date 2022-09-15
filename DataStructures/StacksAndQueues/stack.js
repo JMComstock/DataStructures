@@ -5,6 +5,7 @@ class Node {
     }
 }
 
+// linked list stack
 class Stack {
     constructor() {
         this.top = null;
@@ -42,11 +43,40 @@ class Stack {
 
 }
 
-const myStack = new Stack();
-myStack.push('google');
-myStack.push('hackerrank');
-myStack.push('leetcode');
-myStack.peek();
-myStack.pop();
-myStack.pop();
-console.log(myStack);
+const myLinkedStack = new Stack();
+myLinkedStack.push('google');
+myLinkedStack.push('hackerrank');
+myLinkedStack.push('leetcode');
+myLinkedStack.peek();
+myLinkedStack.pop();
+myLinkedStack.pop();
+console.log(myLinkedStack);
+
+
+// array stack
+class StackArray {
+    constructor() {
+        this.array = [];
+    }
+    peek() {
+        //viewing the first item in the array
+        return this.array[this.array.length-1];
+    }
+    push(value) {
+        // prebuilt with javascript arrays, adds another index to the end of an array
+        this.array.push(value);
+        return this;
+    }
+    pop() {
+        // prebuilt in javascript, removes last index value in the array
+        this.array.pop();
+        return this;
+    }
+}
+
+const myArrayStack = new StackArray();
+myArrayStack.push('google');
+myArrayStack.push('leetcode');
+myArrayStack.pop();
+myArrayStack.peek();
+console.log(myArrayStack);
