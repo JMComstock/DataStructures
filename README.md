@@ -78,19 +78,17 @@
 <div>
     <h3>Binary Tree</h3>
         <h4>Perfect Binary Tree</h4>
-        <p> Properties: <br>
+        <p> <b>Properties: </b> <br>
                 1. the total number of nodes double as you move down the tree<br>
                 2. the number of nodes on the last level, is equal to the sum of all the other nodes + 1</p>
         <ul>
             <li>lookpup O(log N)</li>
             <li>insert O(log N)</li>
-            <li>delete Olog Nn)</li>
+            <li>delete O(log N)</li>
         </ul>
-        <h3>Doubly Linked List</h3>
-        <p>costs more memory but better to traverse forward and backward, more complex, flexible size</p>
+        <h4>Full Binary Tree</h4>
+        <p>Not all nodes have 2 children </p>
         <ul>
-            <li>prepend O(1)</li>
-            <li>append O(1)</li>
             <li>lookpup O(n)</li>
             <li>insert O(n)</li>
             <li>delete O(n)</li>
